@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading" (click)="showDetails()"
+    >
+      <span class="glyphicon pull-right"
+      [ngClass]="{'glyphicon-chevron-up': isHidden, 'glyphicon-chevron-down': !isHidden}">
+      </span>
+      {{title}}
+    </div>
+    <div class="panel-body" *ngIf="isHidden">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

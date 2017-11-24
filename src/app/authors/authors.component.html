@@ -1,0 +1,23 @@
+<div (click) = "onDivClick()">
+<h2>{{authors.length}} Authors </h2>
+<ul>
+  <li *ngFor = "let author of authors; index as i">{{i}} - {{author}}</li>
+</ul>
+<!-- <img [src]= "imageurl"/> -->
+  <!-- <button class="btn " [style.backgroundColor]= "isActive ?'green': 'blue'">Save</button>
+  <button class="btn" (click)="onbuttonClick($event)">Clear</button> -->
+  <input [(ngModel)]="title" /> <br/>
+<label>{{title | titlecase}}</label>
+<!-- <h3>
+{{author.name | uppercase}} <br />
+{{author.income | currency :'EUR': 'true':'1.0-0'}} <br />
+{{author.rating | number:'1.1-1'}} <br />
+{{author.books | number}} <br />
+{{author.birthday | date: 'dd-MMM-yyyy'}} <br />
+</h3>
+
+<br/>
+<br/>
+
+<p>{{text | summary:'100'}}</p>
+</div> -->
